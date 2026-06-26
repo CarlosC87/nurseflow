@@ -40,7 +40,7 @@ type Profile = {
   rol: string;
 };
 
-const SEMAFORO_CONFIG: Record
+const SEMAFORO_CONFIG: Record<
   EstadoSemaforo,
   { label: string; color: string; bg: string; ring: string; pulse: boolean }
 > = {
