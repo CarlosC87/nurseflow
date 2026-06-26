@@ -5,7 +5,7 @@ import { useState } from 'react';
 import { Cross, Monitor, AlertTriangle, ChevronRight, Package } from 'lucide-react';
 
 type Tab = 'insumos' | 'dispositivos';
-
+///nigga///
 interface Insumo {
   id: string;
   nombre: string;
