@@ -31,8 +31,7 @@ export default function LoginPage() {
         form.password
       );
 
-      // Como ya no hay un App.tsx que decida qué mostrar según el rol,
-      // consultamos el perfil aquí mismo para saber a dónde redirigir.
+      
       const profileSnap = await getDoc(doc(db, "profiles", userCredential.user.uid));
       const rol = profileSnap.exists() ? profileSnap.data().rol : null;
 
